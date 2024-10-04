@@ -1,5 +1,4 @@
 import os
-#from langchain.vectorstores.neo4j_vector import Neo4jVector
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
 from langchain.chains import RetrievalQA
@@ -50,8 +49,9 @@ text_qa_prompt = ChatPromptTemplate(
 
 text_qa_vector_chain = RetrievalQA.from_chain_type(
     llm=ChatOpenAI(model=LUFTHANSA_QA_MODEL, temperature=0),
-    chain_type="stuff", # tells the chain to pass all 12 reviews to the prompt
+    chain_type="stuff", # tells the chain to pass all of the retrieved chunks to the prompt
     retriever=aktionaersinfo_retriever,
 )
 
+# Give the prompt to the chain
 text_qa_vector_chain.combine_documents_chain.llm_chain.prompt = text_qa_prompt
