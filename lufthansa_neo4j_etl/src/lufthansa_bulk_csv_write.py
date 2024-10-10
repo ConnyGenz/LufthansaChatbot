@@ -52,6 +52,7 @@ def load_lufthansa_graph_from_csv() -> None:
         for node in NODES:
             session.execute_write(_set_uniqueness_constraints, node)
 
+    # Table "Aggregate" is loaded
     LOGGER.info("Lade Knoten für Tabelle 'Aggregate'")
     with driver.session(database="neo4j") as session:
         query = f"""
@@ -62,6 +63,10 @@ def load_lufthansa_graph_from_csv() -> None:
         """
         _ = session.run(query, {})
 
+    # Table "Leistung" is loaded
+    # A "Leistung"-type node is generated (see list with node types defined above)
+    # This node will have the properties listed in one row of the "Leistung" table
+    # Why "Merge"? What does it do? Does ist create the node?
     LOGGER.info("Lade Knoten für Tabelle 'Leistung'")
     with driver.session(database="neo4j") as session:
         query = f"""
@@ -90,10 +95,7 @@ def load_lufthansa_graph_from_csv() -> None:
         """
         _ = session.run(query, {})
 
-    # Table "aktie" is loaded
-    # An "Aktie"-type node is generated (see list with node types defined above)
-    # This node will have the properties listed in one row of the "aktie" table
-    # Why "Merge"? What does it do? Does ist create the node?
+
     LOGGER.info("Lade Knoten für Tabelle 'Aktie'")
     with driver.session(database="neo4j") as session:
         query = f"""
@@ -108,7 +110,7 @@ def load_lufthansa_graph_from_csv() -> None:
         _ = session.run(query, {})
 
 
-
+    # Loading relationships. Example from hospital chatbot (tutorial)
     #LOGGER.info("Loading 'AT' relationships")
     #with driver.session(database="neo4j") as session:
         #query = f"""

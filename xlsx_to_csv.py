@@ -2,7 +2,7 @@ import os
 
 import pandas as pd
 
-statistical_data_files = ["aktie", "leistungsdaten", "umsatz_ergebnis"]
+statistical_data_files = ["aktie", "leistungsdaten", "umsatz_ergebnis", "aggregate"]
 input_directory = "data/"
 
 for file in statistical_data_files:

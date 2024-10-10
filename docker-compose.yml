@@ -7,3 +7,13 @@ services:
     env_file:
       - .env
 
+  chatbot_api:
+    build:
+      context: ./chatbot_api
+    env_file:
+      - .env
+    depends_on:
+      - lufthansa_neo4j_etl
+    ports:
+      - "8000:8000"
+

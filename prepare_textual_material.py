@@ -15,7 +15,7 @@ output_file_path = "Output/"
 from_word_to_txt(filepath, filenames, output_file_path)
 
 # Chunk content of txt files into LangChain Documents
-my_document_chunks = chunk_as_documents(filenames, input_file_path,700, 50)
+my_document_chunks = chunk_as_documents(filenames, input_file_path, 700, 50)
 
 # Choose location to store vectors
 CHROMA_PATH = "chroma_aktionaersinfos"

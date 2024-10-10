@@ -3,24 +3,25 @@ from langchain_openai import ChatOpenAI
 from langchain.agents import (
     create_openai_functions_agent,
     Tool,
-    AgentExecutor,
-)
+    AgentExecutor)
 from langchain import hub
 
 # Import the RAG chains from the respective files (retrieval chain and cypher chain) in my project
 ### Hier waren im Tutorial relative Importe, d.h., nicht der ganze Pfad aus meinem Projekt
 ## Prüfen, ob das später wichtig ist
-from chatbot_api.src.chains.aktionaersinfos_retrieval_chain import text_qa_vector_chain
-from chatbot_api.src.chains.lufthansa_cypher_chain import lufthansa_cypher_chain
+from chains.aktionaersinfos_retrieval_chain import text_qa_vector_chain
+from chains.lufthansa_cypher_chain import lufthansa_cypher_chain
+# from chatbot_api.src.chains.aktionaersinfos_retrieval_chain import text_qa_vector_chain
+# from chatbot_api.src.chains.lufthansa_cypher_chain import lufthansa_cypher_chain
 
 
 
 # Use hwchase17 to create the agent
 # The hwchase17/openai-tools repository is a comprehensive toolkit designed to enhance the
 # interaction with OpenAI's API. After installation, developers can pull predefined prompts
-# from the hub or create custom agents tailored
+# from the hub or create custom agents
 
-# The agent model decides which tools to call (see below) with what inputs
+# The agent model decides which tools (see below) to call with what inputs
 LUFTHANSA_AGENT_MODEL = os.getenv("LUFTHANSA_AGENT_MODEL")
 
 # The agent needs a prompt
@@ -29,6 +30,7 @@ LUFTHANSA_AGENT_MODEL = os.getenv("LUFTHANSA_AGENT_MODEL")
 # agent scratchpad (intermediate agent actions and tool output messages will be passed in here)
 lufthansa_agent_prompt = hub.pull("hwchase17/openai-functions-agent")
 
+# define custom prompt
 new_prompt = """You are a conversational chatbot and reply to input from a user. If the 
                     question of the user can be answered by calling one of your tools,
                     you will make use of this tool.
@@ -41,9 +43,10 @@ new_prompt = """You are a conversational chatbot and reply to input from a user.
                     about the German airline Lufthansa and its business development during the 
                     last 14 years. You give your answers in the German language."""
 
+# Change standard prompt from hwchase17 to use custom prompt
 lufthansa_agent_prompt.messages[0].prompt.template = new_prompt
 
-#  list of tools your agent can use
+#  list of tools the agent can use
 tools = [
     Tool(
         name="Aktionaersinfos",
@@ -73,7 +76,7 @@ tools = [
     )
 ]
 
-# Specify llm that should power the agent
+# Create ChatModel from LLM that should power the agent
 
 chat_model = ChatOpenAI(
     model=LUFTHANSA_AGENT_MODEL,
