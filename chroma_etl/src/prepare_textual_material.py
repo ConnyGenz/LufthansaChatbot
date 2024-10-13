@@ -5,11 +5,11 @@ from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
 
 dotenv.load_dotenv()
-filepath = "data/"
+filepath = "../../data/"
 filenames = ["Aktionaersinfos-2017", "Aktionaersinfos-2018", "Aktionaersinfos-2020", "Aktionaersinfos-2021"]
 
-input_file_path = "Output/"
-output_file_path = "Output/"
+input_file_path = "../../Output/"
+output_file_path = "../../Output/"
 
 # Specify word document with textual material, read content and write txt file
 from_word_to_txt(filepath, filenames, output_file_path)
@@ -18,7 +18,7 @@ from_word_to_txt(filepath, filenames, output_file_path)
 my_document_chunks = chunk_as_documents(filenames, input_file_path, 700, 50)
 
 # Choose location to store vectors
-CHROMA_PATH = "chroma_aktionaersinfos"
+CHROMA_PATH = "../../chroma_aktionaersinfos"
 
 # Choosing a model for embeddings
 embeddings = OpenAIEmbeddings() # You can also specify a specific model in brackets here
