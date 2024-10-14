@@ -181,4 +181,7 @@ lufthansa_cypher_chain = GraphCypherQAChain.from_llm(
     cypher_prompt=cypher_generation_prompt,
     validate_cypher=True,
     top_k=100,
+    # In order to use this chain, you must acknowledge that it can make dangerous
+    # requests by setting `allow_dangerous_requests` to `True`
+    allow_dangerous_requests=True
 )
