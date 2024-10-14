@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8592df70-c3c0-4da9-83b5-b55115cc3080" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/TextEinlesen.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot_api/chains/aktionaersinfos_retrieval_chain.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatbot_api/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/embed_chunked_text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get_text_from_word.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prepare_textual_material.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/split_txt_material.py" afterDir="false" />
+    <list default="true" id="8592df70-c3c0-4da9-83b5-b55115cc3080" name="Changes" comment="updated and committed requirements-lufthansa-chatbot.txt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,12 +16,30 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ConnyGenz&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ConnyGenz/LufthansaChatbot.git&quot;,
+    &quot;accountId&quot;: &quot;5f2c97ed-b24b-4d6f-a742-150f0cf60cf7&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -46,14 +52,21 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Python.async_agent_requests.executor&quot;: &quot;Run&quot;,
     &quot;Python.embed_chunked_text.executor&quot;: &quot;Run&quot;,
     &quot;Python.get_text_from_word.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lufthansa_bulk_csv_write.executor&quot;: &quot;Run&quot;,
+    &quot;Python.lufthansa_cypher_chain.executor&quot;: &quot;Run&quot;,
+    &quot;Python.new_chatty_chain.executor&quot;: &quot;Run&quot;,
     &quot;Python.prepare_textual_material.executor&quot;: &quot;Run&quot;,
     &quot;Python.split_txt_material.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sync_agent_requests.executor&quot;: &quot;Run&quot;,
+    &quot;Python.xlsx_to_csv.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;chroma__etl__in__container&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/conny/PycharmProjects/RealHospitalbot&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/conny/PycharmProjects/TextEinlesen/chroma_etl/src/data&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -64,14 +77,20 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\conny\PycharmProjects\TextEinlesen\chroma_etl\src\data" />
       <recent name="C:\Users\conny\PycharmProjects\TextEinlesen\data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\conny\PycharmProjects\TextEinlesen\chroma_etl\src" />
+      <recent name="C:\Users\conny\PycharmProjects\TextEinlesen\chroma_etl" />
+      <recent name="C:\Users\conny\PycharmProjects\TextEinlesen\chatbot_api\src" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
-        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.19072.16" />
+        <option value="bundled-python-sdk-8336bb23522e-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.19072.16" />
       </set>
     </attachedChunks>
   </component>
@@ -91,8 +110,129 @@
       <workItem from="1726319840964" duration="968000" />
       <workItem from="1726390202295" duration="4495000" />
       <workItem from="1726738709876" duration="11022000" />
-      <workItem from="1727082728397" duration="1048000" />
+      <workItem from="1727082728397" duration="3077000" />
+      <workItem from="1727086105669" duration="609000" />
+      <workItem from="1727087310767" duration="6430000" />
+      <workItem from="1727285883196" duration="7072000" />
+      <workItem from="1727296610259" duration="141000" />
+      <workItem from="1727335522705" duration="20935000" />
+      <workItem from="1727624500721" duration="7024000" />
+      <workItem from="1727687182003" duration="4801000" />
+      <workItem from="1727807800494" duration="4503000" />
+      <workItem from="1727945293133" duration="9509000" />
+      <workItem from="1728035581705" duration="12894000" />
+      <workItem from="1728144333607" duration="11979000" />
+      <workItem from="1728226189831" duration="6953000" />
+      <workItem from="1728306115503" duration="11871000" />
+      <workItem from="1728543437230" duration="18364000" />
+      <workItem from="1728813675730" duration="27812000" />
+      <workItem from="1728888875068" duration="6774000" />
     </task>
+    <task id="LOCAL-00001" summary="Current project state on 23 September 2024">
+      <option name="closed" value="true" />
+      <created>1727083864598</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727083864598</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added xlsx data files to data folder">
+      <option name="closed" value="true" />
+      <created>1727105760503</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727105760515</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added xlsx data files to data folder">
+      <option name="closed" value="true" />
+      <created>1727122244732</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727122244732</updated>
+    </task>
+    <task id="LOCAL-00004" summary="updated xlsx and csv data files in data folder">
+      <option name="closed" value="true" />
+      <created>1727296739937</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727296739937</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added aggregate.xlsx and aggregate.csv data files to data folder">
+      <option name="closed" value="true" />
+      <created>1727337924197</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727337924197</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added aggregate.xlsx and aggregate.csv data files to data folder">
+      <option name="closed" value="true" />
+      <created>1727343467427</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727343467427</updated>
+    </task>
+    <task id="LOCAL-00007" summary="updated aktie.csv and umsatz_ergebnis.csv to have correct &quot;-&quot; signs for negative values">
+      <option name="closed" value="true" />
+      <created>1727375320840</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727375320840</updated>
+    </task>
+    <task id="LOCAL-00008" summary="save current version as of 04 October 2024">
+      <option name="closed" value="true" />
+      <created>1728036685983</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728036685983</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added custom prompt to lufthansa_rag_agent">
+      <option name="closed" value="true" />
+      <created>1728233441580</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1728233441580</updated>
+    </task>
+    <task id="LOCAL-00010" summary="save complete project with status as of 10 Oct 2024">
+      <option name="closed" value="true" />
+      <created>1728571676836</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728571676836</updated>
+    </task>
+    <task id="LOCAL-00011" summary="new branch chroma_etl_in_container with directory chroma_etl">
+      <option name="closed" value="true" />
+      <created>1728827623809</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728827623809</updated>
+    </task>
+    <task id="LOCAL-00012" summary="finished branch chroma_etl_in_container; works with Docker">
+      <option name="closed" value="true" />
+      <created>1728914291366</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728914291366</updated>
+    </task>
+    <task id="LOCAL-00013" summary="updated and committed requirements-lufthansa-chatbot.txt">
+      <option name="closed" value="true" />
+      <created>1728914933495</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728914933495</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,10 +241,30 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Current project state on 23 September 2024" />
+    <MESSAGE value="added xlsx data files to data folder" />
+    <MESSAGE value="updated xlsx and csv data files in data folder" />
+    <MESSAGE value="added aggregate.xlsx and aggregate.csv data files to data folder" />
+    <MESSAGE value="updated aktie.csv and umsatz_ergebnis.csv to have correct &quot;-&quot; signs for negative values" />
+    <MESSAGE value="save current version as of 04 October 2024" />
+    <MESSAGE value="added custom prompt to lufthansa_rag_agent" />
+    <MESSAGE value="save complete project with status as of 10 Oct 2024" />
+    <MESSAGE value="new branch chroma_etl_in_container with directory chroma_etl" />
+    <MESSAGE value="finished branch chroma_etl_in_container; works with Docker" />
+    <MESSAGE value="updated and committed requirements-lufthansa-chatbot.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated and committed requirements-lufthansa-chatbot.txt" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TextEinlesen$lufthansa_cypher_chain.coverage" NAME="lufthansa_cypher_chain Coverage Results" MODIFIED="1727633077774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chatbot_api/src/chains" />
+    <SUITE FILE_PATH="coverage/TextEinlesen$new_chatty_chain.coverage" NAME="new_chatty_chain Coverage Results" MODIFIED="1728164100001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chatbot_api/src/chains" />
+    <SUITE FILE_PATH="coverage/TextEinlesen$lufthansa_bulk_csv_write.coverage" NAME="lufthansa_bulk_csv_write Coverage Results" MODIFIED="1727370474544" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lufthansa_neo4j_etl/src" />
     <SUITE FILE_PATH="coverage/TextEinlesen$embed_chunked_text.coverage" NAME="embed_chunked_text Coverage Results" MODIFIED="1725996391356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TextEinlesen$async_agent_requests.coverage" NAME="async_agent_requests Coverage Results" MODIFIED="1728331682673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/TextEinlesen$xlsx_to_csv.coverage" NAME="xlsx_to_csv Coverage Results" MODIFIED="1727343318468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TextEinlesen$get_text_from_word.coverage" NAME="get_text_from_word Coverage Results" MODIFIED="1725564783054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TextEinlesen$prepare_textual_material.coverage" NAME="prepare_textual_material Coverage Results" MODIFIED="1726756265262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TextEinlesen$prepare_textual_material.coverage" NAME="prepare_textual_material Coverage Results" MODIFIED="1728816119319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chroma_etl/src" />
     <SUITE FILE_PATH="coverage/TextEinlesen$split_txt_material.coverage" NAME="split_txt_material Coverage Results" MODIFIED="1725875892928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TextEinlesen$sync_agent_requests.coverage" NAME="sync_agent_requests Coverage Results" MODIFIED="1728331113148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
 </project>

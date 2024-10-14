@@ -1,0 +1,17 @@
+[project]
+name = "chroma_etl"
+version = "0.1"
+dependencies = [
+   "chromadb==0.4.22",
+   "chroma-hnswlib==0.7.3",
+   "langchain==0.3.3",
+   "langchain-community==0.3.2",
+   "langchain-openai==0.2.2",
+   "langchainhub==0.1.14",
+   "langchain-text-splitters==0.3.0",
+   "openai==1.51.2",
+   "Spire.Doc==12.7.1"
+]
+
+[project.optional-dependencies]
+dev = ["black", "flake8"]

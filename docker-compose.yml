@@ -7,6 +7,12 @@ services:
     env_file:
       - .env
 
+  chroma_etl:
+    build:
+      context: ./chroma_etl
+    env_file:
+      - .env
+
   chatbot_api:
     build:
       context: ./chatbot_api
@@ -14,6 +20,18 @@ services:
       - .env
     depends_on:
       - lufthansa_neo4j_etl
+      - chroma_etl
     ports:
       - "8000:8000"
+
+  chatbot_frontend:
+    build:
+      context: ./chatbot_frontend
+    env_file:
+      - .env
+    depends_on:
+      - chatbot_api
+    ports:
+      - "8501:8501"
+
 
