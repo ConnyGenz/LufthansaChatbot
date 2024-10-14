@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8592df70-c3c0-4da9-83b5-b55115cc3080" name="Changes" comment="new branch chroma_etl_in_container with directory chroma_etl">
-      <change afterPath="$PROJECT_DIR$/chatbot_api/src/utils/async_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chroma_etl/src/data/Aktionaersinfos-2017.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chroma_etl/src/data/Aktionaersinfos-2018.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chroma_etl/src/data/Aktionaersinfos-2020.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chroma_etl/src/data/Aktionaersinfos-2021.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/async_agent_requests.py" afterDir="false" />
+    <list default="true" id="8592df70-c3c0-4da9-83b5-b55115cc3080" name="Changes" comment="updated and committed requirements-lufthansa-chatbot.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot_api/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot_api/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot_api/src/chains/aktionaersinfos_retrieval_chain.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot_api/src/chains/aktionaersinfos_retrieval_chain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatbot_api/src/chains/lufthansa_cypher_chain.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot_api/src/chains/lufthansa_cypher_chain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chroma_etl/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/chroma_etl/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chroma_etl/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/chroma_etl/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chroma_etl/src/prepare_textual_material.py" beforeDir="false" afterPath="$PROJECT_DIR$/chroma_etl/src/prepare_textual_material.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +126,7 @@
       <workItem from="1728306115503" duration="11871000" />
       <workItem from="1728543437230" duration="18364000" />
       <workItem from="1728813675730" duration="27812000" />
-      <workItem from="1728888875068" duration="5552000" />
+      <workItem from="1728888875068" duration="6774000" />
     </task>
     <task id="LOCAL-00001" summary="Current project state on 23 September 2024">
       <option name="closed" value="true" />
@@ -229,7 +216,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728827623809</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="finished branch chroma_etl_in_container; works with Docker">
+      <option name="closed" value="true" />
+      <created>1728914291366</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728914291366</updated>
+    </task>
+    <task id="LOCAL-00013" summary="updated and committed requirements-lufthansa-chatbot.txt">
+      <option name="closed" value="true" />
+      <created>1728914933495</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728914933495</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +251,9 @@
     <MESSAGE value="added custom prompt to lufthansa_rag_agent" />
     <MESSAGE value="save complete project with status as of 10 Oct 2024" />
     <MESSAGE value="new branch chroma_etl_in_container with directory chroma_etl" />
-    <option name="LAST_COMMIT_MESSAGE" value="new branch chroma_etl_in_container with directory chroma_etl" />
+    <MESSAGE value="finished branch chroma_etl_in_container; works with Docker" />
+    <MESSAGE value="updated and committed requirements-lufthansa-chatbot.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated and committed requirements-lufthansa-chatbot.txt" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TextEinlesen$lufthansa_cypher_chain.coverage" NAME="lufthansa_cypher_chain Coverage Results" MODIFIED="1727633077774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chatbot_api/src/chains" />
