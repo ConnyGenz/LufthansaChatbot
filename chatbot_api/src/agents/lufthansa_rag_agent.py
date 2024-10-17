@@ -1,4 +1,5 @@
 import os
+import dotenv
 from langchain_openai import ChatOpenAI
 from langchain.agents import (
     create_openai_functions_agent,
@@ -9,12 +10,13 @@ from langchain import hub
 # Import the RAG chains from the respective files (retrieval chain and cypher chain) in my project
 ### Hier waren im Tutorial relative Importe, d.h., nicht der ganze Pfad aus meinem Projekt
 ## Prüfen, ob das später wichtig ist
-from chains.aktionaersinfos_retrieval_chain import text_qa_vector_chain
-from chains.lufthansa_cypher_chain import lufthansa_cypher_chain
-# from chatbot_api.src.chains.aktionaersinfos_retrieval_chain import text_qa_vector_chain
-# from chatbot_api.src.chains.lufthansa_cypher_chain import lufthansa_cypher_chain
+# from chains.aktionaersinfos_retrieval_chain import text_qa_vector_chain
+# from chains.lufthansa_cypher_chain import lufthansa_cypher_chain
+from chatbot_api.src.chains.aktionaersinfos_retrieval_chain import text_qa_vector_chain
+from chatbot_api.src.chains.lufthansa_cypher_chain import lufthansa_cypher_chain
 
 
+dotenv.load_dotenv()
 
 # Use hwchase17 to create the agent
 # The hwchase17/openai-tools repository is a comprehensive toolkit designed to enhance the

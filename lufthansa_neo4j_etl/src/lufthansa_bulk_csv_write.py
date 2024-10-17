@@ -1,9 +1,10 @@
 import logging
 import os
-
+import dotenv
 from neo4j import GraphDatabase
 from retry import retry
 
+dotenv.load_dotenv()
 AKTIE_CSV_PATH = os.getenv("AKTIE_CSV_PATH")
 UMSATZ_CSV_PATH = os.getenv("UMSATZ_CSV_PATH")
 LEISTUNG_CSV_PATH = os.getenv("LEISTUNG_CSV_PATH")

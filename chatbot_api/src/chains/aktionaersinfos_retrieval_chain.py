@@ -1,4 +1,5 @@
 import os
+import dotenv
 from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 from langchain.chains import RetrievalQA
@@ -9,6 +10,8 @@ from langchain.prompts import (
     HumanMessagePromptTemplate,
     ChatPromptTemplate,
 )
+
+dotenv.load_dotenv()
 
 # Model for text QA as specified in the .env file
 LUFTHANSA_QA_MODEL = os.getenv("LUFTHANSA_QA_MODEL")
