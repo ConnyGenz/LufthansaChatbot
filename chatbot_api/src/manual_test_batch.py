@@ -6,7 +6,7 @@ list_of_questions = []
 list_of_answers = []
 
 # Document with questions to be asked. To be provided by user.
-file_path = "meine_fragen.txt"
+file_path = "meine_fragen_2.txt"
 
 # Read question file and create list of strings
 with open(file_path, 'r', encoding="utf-8") as file:
