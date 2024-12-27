@@ -44,7 +44,7 @@ correct in your queries. Make sure you alias both entities and relationships
 properly. Do not run any queries that would add to or delete from
 the database. If you need to divide numbers, make sure to filter the denominnator 
 to be non zero. The requests based on which you should create cypher queries will 
-be in Germa, the names for the nodes and properties in the graph are German, as well.
+be in German, the names for the nodes and properties in the graph are German, as well.
 
 Examples:
 # Was war der Jahresschlusskurs der Lufthansa-Aktie im Jahr 2017?
