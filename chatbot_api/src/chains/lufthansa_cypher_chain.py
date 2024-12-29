@@ -42,7 +42,7 @@ for you to construct a Cypher statement. Do not include any text except
 the generated Cypher statement. Make sure the direction of the relationship is
 correct in your queries. Make sure you alias both entities and relationships
 properly. Do not run any queries that would add to or delete from
-the database. If you need to divide numbers, make sure to filter the denominnator 
+the database. If you need to divide numbers, make sure to filter the denominator 
 to be non zero. The requests based on which you should create cypher queries will 
 be in German, the names for the nodes and properties in the graph are German, as well.
 
