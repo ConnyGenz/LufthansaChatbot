@@ -27,7 +27,7 @@ aktionaersinfo_retriever = aktionaersinfos_vector_db.as_retriever(k=10)
 
 # prompt elements for the chain:
 
-text_qa_template = """Your are a helpful chatbot who works for the German airline Lufthansa. 
+text_qa_template = """You are a helpful chatbot who works for the German airline Lufthansa. 
 You use shareholder information documents to answer questions about Lufthansa. Use
 the following context to answer questions. Be as detailed as possible, but
 don't make up any information that's not from the context. If you don't know
