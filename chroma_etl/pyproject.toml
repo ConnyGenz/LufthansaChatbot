@@ -9,7 +9,7 @@ dependencies = [
    "langchain-openai==0.2.2",
    "langchainhub==0.1.14",
    "langchain-text-splitters==0.3.0",
-   "openai==1.51.2",
+   "openai==1.55.3",
    "Spire.Doc==12.7.1"
 ]
 

@@ -13,7 +13,7 @@ dependencies = [
     "langchainhub==0.1.14",
     "neo4j==5.24.0",
     "numpy==1.26.4",
-    "openai==1.51.2",
+    "openai==1.55.3",
     "opentelemetry-api==1.27.0",
     "pydantic==2.8.2",
     "uvicorn==0.30.6"
