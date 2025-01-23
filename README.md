@@ -65,6 +65,7 @@ and write the required neo4j parameters into the `.env` file.
 7. Wait for the Docker containers to be created and for the code to be executed. This may take around 5 minutes.
 8. Open the Streamlit GUI in your browser under the following address: `http://localhost:8501`. You can now chat with the chatbot there.
 9. Alternatively, you may open the FastAPI in your browser (`http://localhost:8000/docs`) and test the chatbot there.
+10. The program may be stopped by the following command: `docker-compose down`.
 
 # Starting the more_control branch:
 
