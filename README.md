@@ -7,9 +7,12 @@ A chatGPT-based RAG chatbot answering questions about German airline Lufthansa
 > This project does not function without a `.env` file in the root folder.
 
 > [!IMPORTANT]
-> If you are using the `.env` file provided by the author, the the project will not function if
+> If you are using the `.env` file provided by the author, the project will not function if
  the author's neo4j database is not running. You may create your own neo4j database to be independent
- from the author's database. See [Step 3: Set Up a Neo4j Graph Database](https://realpython.com/build-llm-rag-chatbot-with-langchain/#step-3-set-up-a-neo4j-graph-database).
+ of the author's database. See [Step 3: Set Up a Neo4j Graph Database](https://realpython.com/build-llm-rag-chatbot-with-langchain/#step-3-set-up-a-neo4j-graph-database).
+
+> [!IMPORTANT]
+> For the **main branch**, you need to install the [Docker](https://www.docker.com/products/docker-desktop/) containerization software.
 
 # .env file
 
@@ -58,3 +61,9 @@ manually, but you need to install the [Docker](https://www.docker.com/products/d
 The **main branch** provides a **GUI** for users to interact with the chatbot.
 
 The **more_control** branch
+
+# Starting the main branch:
+
+1. Install the [Docker](https://www.docker.com/products/docker-desktop/) containerization software.
+2. Open the project in your IDE.
+3. Add a `.env` file to the root directory of the project. You can either request one from the author or create your own (see [.env file](#.env-file) above)
