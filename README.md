@@ -49,7 +49,8 @@ This project has 2 major branches: `main` and `more_control`. For the **main bra
 manually, but you need to install the [Docker](https://www.docker.com/products/docker-desktop/) containerization software. 
 The **main branch** provides a browser-based **GUI** for users to interact with the chatbot.
 
-The **more_control** branch runs without Docker, directly in the IDE. It also has a  
+The **more_control** branch runs without Docker, directly in the IDE. It also has a script for asking the chatbot
+a number of questions at a time, provided in a txt file (`manual_test_batch.py`).
 
 # Starting the main branch:
 
@@ -66,3 +67,17 @@ and write the required neo4j parameters into the `.env` file.
 9. Alternatively, you may open the FastAPI in your browser (`http://localhost:8000/docs`) and test the chatbot there.
 
 # Starting the more_control branch:
+
+1. Open the project in your IDE.
+2. Install the required dependencies (`requirements-lufthansa-chatbot.txt` in the root directory).
+3. Add a `.env` file to the root directory of the project. You can either request one from the author or create your own (see [.env file](#env-file) above).
+4. The project already contains a retrieval database (`chroma_etl/src/chroma_aktionaersinfos`), and the author's 
+neo4j graph database for statistical data is available online. If you are going to make use of those, you can skip
+steps 5 and 6.
+5. Run script `chroma_etl/src/prepare_textual_material.py` to create textual retrieval database.
+6. Run script: `lufthansa_neo4j_etl/src/lufthansa_bulk_csv_write.py` to create statistical graph database.
+7. Use either the script `chatbot_api/src/manual_chatbot_test_script.py` to ask the chatbot 1 question (save your question 
+in the **question** variable) or `chatbot_api/src/manual_test_batch.py` to ask several questions at a time. (Save your
+questions in a txt file and place it in the `chatbot_api/src` directory. In `manual_test_batch.py`, specify the name
+of your txt file in the **file_path** variable. Output of successfully answered questions will be to a file **answers.txt**
+in the `chatbot_api/src` directory.)
